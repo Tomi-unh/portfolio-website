@@ -1,0 +1,231 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    overflow-x: hidden;
+
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul {
+    padding: 0;
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.content {
+    width: 100%;
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%) translateX(10%);
+    text-align: center;
+}
+
+.content .header {
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+.content .paragraph {
+    margin: 10px 0 30px;
+    color: #333;
+}
+
+.content .profile-img {
+    width: 470px;
+    position: absolute;
+    bottom: 0;
+    right: 61%;
+}
+
+.about {
+    top: 10px;
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+}
+
+.top-left-header {
+    position: fixed;
+    top: 40px;
+    left: 10px;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.top-left-header .name {
+    font-weight: bold;
+}
+
+.top-left-header .title {
+    font-weight: normal;
+}
+
+.contact-info {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+.social-icons {
+    margin-top: 410px;
+	margin-left: 800px;
+}
+
+.social-icons a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+.resume-section {
+    margin: 100px auto 80px;
+    padding: 20px;
+    width: 85%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.resume-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resume-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.resume-item {
+    width: 45%;
+    margin-bottom: auto;
+}
+
+.resume-item h3 {
+    margin-bottom: auto;
+}
+
+.download-btn {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #0073e6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.download-btn:hover {
+    background: #005bb5;
+}
+.resume-background {
+    background-image: url(img/bg.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.image-collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.image-collage img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-body {
+    background-image: url(img/bg.jpg);
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .image-collage {
+        grid-template-columns: 1fr;
+    }
+
+    .image-collage img {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        text-align: left;
+        padding: 0.5rem;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        width: 100%;
+        margin: 1rem 0;
+        padding: 0.5rem;
+    }
+}
